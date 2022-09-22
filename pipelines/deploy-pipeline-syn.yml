@@ -1,0 +1,19 @@
+trigger: none
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: Synapse workspace deployment@2
+  inputs:
+    operation: 'deploy'
+    TemplateFile: '$(SOURCE_WORKSPACE_NAME)/TemplateForWorkspace.json'
+    ParametersFile: '$(SOURCE_WORKSPACE_NAME)/TemplateParametersForWorkspace.json'
+    azureSubscription: '$(ARM_CONNECTION)'
+    ResourceGroupName: '$(RESOURCE_GROUP)'
+    TargetWorkspaceName: '$(WORKSPACE_NAME)'
+    DeleteArtifactsNotInTemplate: true
+    DeployManagedPrivateEndpoints: false
+    FailOnMissingOverrides: false
+    Environment: 'prod'
+    npmpackage: 'prod'

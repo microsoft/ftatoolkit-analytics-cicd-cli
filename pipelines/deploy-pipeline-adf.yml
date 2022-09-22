@@ -1,0 +1,19 @@
+trigger: none
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: '$(ARM_CONNECTION)'
+    subscriptionId: '$(SUBSCRIPTION_ID)'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: '$(RESOURCE_GROUP)'
+    location: '$(LOCATION)'
+    templateLocation: 'Linked artifact'
+    csmFile: '$(SOURCE_WORKSPACE_NAME)/ARMTemplateForFactory.json'
+    csmParametersFile: '$(SOURCE_WORKSPACE_NAME)/ARMTemplateParametersForFactory.json'
+    overrideParameters: '-factoryName $(WORKSPACE_NAME)'
+    deploymentMode: 'Incremental'
