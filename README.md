@@ -1,4 +1,4 @@
-# Analytics CI/CD CLI
+# Analytics CI/CD CLI Utility
 
 Command line tool for quickly setting up CI/CD for Azure Data Factory and Synapse Analytics.
 
