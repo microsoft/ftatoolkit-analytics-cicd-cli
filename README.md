@@ -41,7 +41,7 @@ Triggering the Deploy pipeline will publish the development environment to produ
 
 ## Result
 
-After executing the setup script, you may run the Workspace Deploy Pipeline to replicate your Development environment to Production whenever necessary. You may also customize the pipeline to better suit your use case, if necessary.
+After executing the setup script, you may run the Workspace Deploy Pipeline to replicate your Development environment to Production. You may also customize the pipeline to better suit your use case, if necessary.
 
 ## Contributing
 
