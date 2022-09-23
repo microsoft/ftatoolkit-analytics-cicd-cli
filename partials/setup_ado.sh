@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 # Set up Azure DevOps repository for CI/CD
 configure_ado() {
     echo "Azure Devops source control detected. 

@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 # Requests key press so user can read prompts
 wait_for_prompt () {
     read -n1 -s -r -p $'Press any key to continue, Ctrl+C to exit.\n' key
