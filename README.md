@@ -1,12 +1,17 @@
+![Fast Track for Azure](./readme_assets/fta.png)
+
 # Analytics CI/CD CLI Utility
 
 Command line tool for quickly setting up CI/CD for Azure Data Factory and Synapse Analytics.
 
 ## Table of Contents
-  - [Overview](#overview)
-  - [Solution Architecture](#solution-architecture)
-  - [Usage](#usage)
-  - [Result](#result)
+- [Overview](#overview)
+- [Prerequisites](#prerequisites)
+- [Solution Architecture](#solution-architecture)
+- [Usage](#usage)
+- [Result](#result)
+- [Contributing](#contributing)
+- [Trademarks](#trademarks)
 
 ## Overview
 
@@ -15,6 +20,12 @@ Azure Data Factory and Synapse Analytics both have built-in Git integration. Wit
 However, there is some additional complexity when we consider multiple environments - development, test and production, for example. There are multiple solutions to this problem, and the project team must carefully choose and set up a CI/CD mechanism that fits their needs.
 
 This repository provides an interactive command line tool that helps you set up CI/CD for Data Factory and Synapse Analytics. This template is simple, yet effective and adaptable to most use-case scenarios, while following best practices around DevOps for Analytics.
+
+## Prerequisites
+
+- Active Azure Subscription
+- Write access to an Azure DevOps project
+- Azure Data Factory or Synapse Workspaces (or permission to create them)
 
 ## Solution Architecture
 
