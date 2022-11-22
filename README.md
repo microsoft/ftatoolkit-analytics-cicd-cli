@@ -1,4 +1,5 @@
 ![Fast Track for Azure](./readme_assets/fta.png)
+Move to Azure efficiently with customized guidance from Azure engineering. [FastTrack for Azure – Benefits and FAQ | Microsoft Azure](https://azure.microsoft.com/en-us/programs/azure-fasttrack/)
 
 # Analytics CI/CD CLI Utility
 
