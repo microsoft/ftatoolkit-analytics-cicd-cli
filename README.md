@@ -45,7 +45,7 @@ Triggering the Deploy pipeline will publish the development environment to produ
 | 1 | Create Data Factory or Synapse workspaces | ![Identify workspaces](./readme_assets/1_verify_workspaces.png) |
 | 2 | Set up Azure DevOps project with a git repository | ![Setup Git Repository](./readme_assets/3_setup_git_repository.png) |
 | 3 | Connect your development workspace with the git repository | ![Setup Git Integration](./readme_assets/4_setup_git_integration.png) |
-| 4 | Set up Azure CLI <br> - Instal az cli <br> - Log in to the correct tenant <br> - Make sure the `datafactory` or `synapse`, as well as `devops` plugins are installed  | ----- |
+| 4 | Set up Azure CLI <br> - Install az cli <br> - Log in to the correct tenant <br> - Make sure the `datafactory` or `synapse`, as well as `devops` plugins are installed  | ----- |
 | 5 | Clone this repository | ```git clone https://github.com/microsoft/ftatoolkit-analytics-cicd-cli.git``` |
 | 6 | Run `sh setup.sh` | ![Start setup](./readme_assets/2_start_setup.png) |
 | 7 | Follow the interactive prompts | ----- |
